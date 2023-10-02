@@ -12,6 +12,9 @@ Steps:
 
 4. Install all the requirements for the project.
 ```pip install -r requirements.txt```
+   i. If you're facing an error installing due to permissions, 
+   try running below command and then retrying the install command again.
+        ```python -m pip install -U pip --user```
 
 5. Descriptions on how to fix the functions are provided in the readme.
 
