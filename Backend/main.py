@@ -70,7 +70,7 @@ def write_tasks(task_list: Dict[int, Task]):
         # before writing to file (Pydantic
         # models are not serializable)
         task_list[task_id] = task_list[task_id].dict()
-        file.write(json.dumps(task_list))
+    file.write(json.dumps(task_list))
     file.close()
 
 @app.get("/")
